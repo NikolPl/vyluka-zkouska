@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container a{
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--indigo);
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.container svg{
+  width: 50px;
+}
+
+.container .cls-1 {
+  fill: var(--karmin);
+}

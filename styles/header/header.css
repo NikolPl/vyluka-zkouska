@@ -1,0 +1,14 @@
+@import "../colors.css";
+/* tady třeba ještě oddělit vlastní styly pro nav */
+
+header {
+  background-color: var(--karmin);
+  height: 44px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+

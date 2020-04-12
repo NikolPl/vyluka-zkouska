@@ -1,0 +1,16 @@
+:root {
+  /* zakladni barvy */
+  --indigo: #311E61;
+  --karmin: #E50046;
+  --tyrkys: #18B6C3;
+  --gold: #FFCC00;
+  /* rozsirujici barvy */
+  --zelena: #65B32E;
+  --svetleZelena: #95C11F;
+  --zluta: #F9B000;
+  --oranzova: #EC6608;
+  --sedoModra: #A6C2C9;
+  --svetlaModra: #DAE5E5;
+  --modra: #058EC2;
+  --tmaveModra: #241E46;
+}

@@ -1,0 +1,39 @@
+/* COMPONENTS IMPORT */
+@import "header/header.css";
+@import "main/main.css";
+@import "footer/footer.css";
+@import "colors.css";
+
+/* Zde je jen opravdu základní styl - všechny jednotlivé prvky jsou naimportovány (
+  obsahují v sobě další menší naimportované části */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  max-width: 576px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indigo {
+  font-weight: bold;
+  color: var(--indigo);
+  font-size: 18px;
+}
+
+.margin_top {
+  margin-top: 20px;
+}

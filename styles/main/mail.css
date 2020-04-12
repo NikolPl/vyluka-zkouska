@@ -1,0 +1,21 @@
+.contact-organization .mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-organization .mail svg {
+  width:22px;
+  height: 16px;
+  max-width: 15%;
+}
+
+.mail .mail-path {
+  fill: white;
+}
+
+.mail a {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}

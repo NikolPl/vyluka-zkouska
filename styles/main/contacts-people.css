@@ -1,0 +1,62 @@
+
+.contacts-people {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.contacts-people h2 {
+  font-size: 24px;
+  color: var(--karmin);
+  margin: 30px 0px 0px 0px;
+}
+
+.contacts-people article {
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contacts-people article p {
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.contacts-people article img {
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+  margin: 10px 20px 10px 20px;
+}
+
+.contacts-people .contacts-description {
+  max-width: 80%;
+  padding: 0px 20px 0px 0px;
+}
+
+.contacts-people .contacts-description h3 {
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  color: var(--indigo);
+}
+
+.contacts-description .phone-and-mail {
+  display: flex;
+  flex-direction: row;
+  margin-top:5px;
+}
+
+.contacts-description .phone-and-mail a {
+  font-size: 14px;
+  color: var(--karmin);
+}
+
+.contacts-people article .phone-and-mail img {
+  width: 30%;
+  border-radius: 0%;
+  margin: 5px;
+  max-width: 14px;
+}

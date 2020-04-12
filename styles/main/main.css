@@ -1,0 +1,24 @@
+@import "../colors.css";
+@import "hero.css";
+@import "introduction.css";
+@import "three-containers.css";
+@import "contacts-people.css";
+@import "contact-organization.css";
+@import "carousel-sponsors.css";
+
+/* import jednotlivých komponent - rozdělíme si - superHero, boxy atp */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+section p{
+  margin: 0px 18px 18px 18px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}

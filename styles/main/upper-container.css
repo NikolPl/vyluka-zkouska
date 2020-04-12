@@ -1,0 +1,35 @@
+.upper-container {
+  margin-top: -73px;
+  max-width: 400px;
+}
+
+.upper-container-inside {
+  background-color: var(--karmin);
+  border: 1px solid var(--karmin);
+  border-radius: 7px;
+  margin: 0px 10px;
+  height: 145px;
+  box-shadow: 0.4px 5px 10px 0.4px rgb(116, 115, 115);
+}
+
+.upper-container-inside p {
+  font-size: 24px;
+  color: white;
+  padding: 18px 8px 34px 8px;
+  margin: 0px;
+}
+
+.upper-container a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--karmin);
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0.4px 5px 10px 0.4px rgb(116, 115, 115);
+  bottom: 18px;
+}

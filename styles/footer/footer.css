@@ -1,0 +1,56 @@
+@import "../colors.css";
+
+footer {
+  margin: 0px;
+}
+
+footer section {
+  background-color: var(--indigo);
+  padding: 37px 0px 37px 15px;
+}
+
+footer section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+footer section ul {
+  list-style-type: none;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+
+footer section ul li {
+  margin: 10px 0px;
+}
+
+footer section ul a {
+  color: white;
+  font-size: 14px;
+}
+
+footer section .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+section .social-media svg {
+  width: 40px;
+  padding: 5px;
+}
+
+section .social-media .tw {
+  fill: #28BDFF;
+}
+
+section .social-media .fb {
+  fill:#4064AD;
+}
+
+section .social-media .inst {
+  fill: #E50046;
+}

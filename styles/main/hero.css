@@ -1,0 +1,28 @@
+.hero {
+  height: 320px;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../img/mobile/main_photo.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.hero .description-hero {
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+  padding: 35px 15px 20px 15px;
+}
+
+.hero p {
+  color: white;
+  font-size: 18px;
+  margin:0px;
+  padding:0px 15px 50px 15px;
+  font-weight: 200;
+}

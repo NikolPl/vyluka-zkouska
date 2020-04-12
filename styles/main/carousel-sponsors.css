@@ -1,0 +1,16 @@
+@import "carousel.css";
+
+
+.carousel-sponsors {
+  background-color: #FBF8F8;
+  height: 190px;
+}
+
+.carousel-sponsors h2 {
+  color: var(--karmin);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
