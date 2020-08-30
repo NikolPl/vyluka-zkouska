@@ -1,97 +1,62 @@
- 
- 
- // carousel-references
- var classSlide = ["image1","image2","image3" ]
- var position = [0, 1, 2] 
 
- function slideCarouselNext(left, middle, right){
-    if(left == position[0] && middle == position[1] && right == position[2]) {
-         changeImges(left, middle, right);
-         plusStep();
-         console.log("console log - (1):" +left+middle+ right);
-    }
 
-    //position = 1, 2, 0
-    else if(position[0] == middle && position[1]== right && position[2] == left){
-      //  left = 1;
-      //  middle = 2;
-      //  right = 0;
-       changeImges(left, middle, right);
-       plusStep();
-       console.log("console log - (2):" +left+ middle+ right);
-    }
+// carousel-references
 
-    // position 2, 0, 1
-    else if(position[0] == right && position[1] == left && position[2] == middle){
-      //  left = 2;
-      //  middle = 0;
-      //  right = 1;
-       changeImges(left, middle, right);
-       plusStep();
-       console.log("console log - (3):" +left+ middle+ right);
-    }
- }
+var slideIndex = 1;
+//  showSlides(slideIndex);
 
-  function slideCarouselPrev(left, middle, right){
-    if(left == position[0] && middle == position[1] && right == position[2]) {
-       changeImges(left, middle, right);
-       minusStep();
-       console.log("console log - minus(1):" +left+middle+ right);
-    }
+function plusSlides(n) {
+   showSlides(slideIndex += n);
+}
 
-    //position = 1, 2, 0
-    else if(position[0] == middle && position[1]== right && position[2] == left){
-      //  left = 2;
-      //  middle = 0;
-      //  right = 1;
-       changeImges(left, middle, right);
-       minusStep();
-       console.log("console log -minus (2):" +left+ middle+ right);
-    }
+function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("slides");
+   var slide1 = document.getElementById("image1");
+   var slide2 = document.getElementById("image2");
+   var slide3 = document.getElementById("image3");
 
-    // position 2, 0, 1
-    else if(position[0] == right && position[1] == left && position[2] == middle){
-      //  left = 1;
-      //  middle = 2;
-      //  right = 0;
-       changeImges(left, middle, right);
-       minusStep();
-       console.log("console log - minus(3):" +left+ middle+ right);
-    }
-  }
+   if (n >= slides.length) { slideIndex = 0 }
+   if (n < 0) { slideIndex = slides.length - 1 }
+   for (i = 0; i < slides.length; i++) {
 
- function changeImges(first, second, third){
-   var image0 = document.getElementById(classSlide[first]);
-   var image1 = document.getElementById(classSlide[second]);
-   var image2 = document.getElementById(classSlide[third]);
-
-   image0.src="img/mobile/ref_kristina.png";
-   image1.src="img/mobile/ref_jakub.png";
-   image2.src="img/mobile/ref_cap.png";
-
- }
-
-   function plusStep(left, middle, right){
-      for(var i = 0; i < 3; i++){
-         if(position[i] != 2){
-         position[i] = position[i]+1;
-         }
-         else {
-            position[i] = 0;
-         }
-         console.log(position[i]);
+      if (slideIndex == 1) {
+         slide1.src = "img/mobile/ref_" + (slideIndex - 1) + ".png";
+         slide2.src = "img/mobile/ref_" + (slideIndex) + ".png";
+         slide3.src = "img/mobile/ref_" + (slideIndex + 1) + ".png";
       }
-   }
-
-function minusStep(){
-   for(var i = 0; i < 3; i++){
-      if(position[i] != 0){
-         position[i] = position[i]-1;
+      if (slideIndex == 2) {
+         slide1.src = "img/mobile/ref_" + (slideIndex - 1) + ".png";
+         slide2.src = "img/mobile/ref_" + (slideIndex) + ".png";
+         slide3.src = "img/mobile/ref_" + (slideIndex - 2) + ".png";
       }
-      else {
-         position[i] = 2;
+      if (slideIndex == 0) {
+         slide1.src = "img/mobile/ref_" + (slideIndex + 2) + ".png";
+         slide2.src = "img/mobile/ref_" + (slideIndex) + ".png";
+         slide3.src = "img/mobile/ref_" + (slideIndex + 1) + ".png";
       }
-      console.log(position[i]);
    }
 }
-   
+
+var sponsorIndex = 1
+function nextSponsor(n) {
+
+   showSponsors(sponsorIndex += n);
+
+}
+
+function showSponsors(n) {
+   var sponsors = document.getElementsByClassName("sponsor");
+   var i;
+   if (n >= sponsors.length - 1) { sponsorIndex = 1 }
+   if (n <= 0) { sponsorIndex = sponsors.length - 2 }
+   for (i = 0; i < sponsors.length; i++) {
+
+      sponsors[i].classList.add("hide");
+
+   }
+   sponsors[sponsorIndex - 1].classList.remove("hide");
+   sponsors[sponsorIndex].classList.remove("hide");
+   sponsors[sponsorIndex + 1].classList.remove("hide");
+}
+

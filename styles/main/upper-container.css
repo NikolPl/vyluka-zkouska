@@ -33,3 +33,19 @@
   box-shadow: 0.4px 5px 10px 0.4px rgb(116, 115, 115);
   bottom: 18px;
 }
+
+@media(min-width:580px){
+  .upper-container {
+    max-width:650px;
+  }
+
+  .upper-container-inside p {
+    padding: 40px 40px;
+  }
+
+  .upper-container a {
+    background-color: var(--indigo);
+    border-color: var(--indigo);
+    color: white;
+  }
+}

@@ -3,7 +3,14 @@
 
 header {
   background-color: var(--karmin);
-  height: 44px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 5px;
 }
 
 header a {
@@ -11,4 +18,22 @@ header a {
   color: white;
   text-transform: uppercase;
 }
+
+nav{
+  display: none;
+}
+
+#logo{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 90px;
+  height: 90px;
+}
+
+#logo svg{
+  width: 100%;
+  height: auto;
+}
+
 

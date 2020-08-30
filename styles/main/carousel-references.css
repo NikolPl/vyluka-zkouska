@@ -55,7 +55,56 @@
   /* On hover, add a grey background color */
   .prev:hover, .next:hover {
     background-color: #f1f1f1;
-    color: black;}
+    color: black;
+  }
+
+    @media(min-width:580px){
+
+      .carousel-references {
+        all: unset;
+        display: block;
+        max-width: 80%;
+        margin: auto;
+      }
+
+      .carousel-item-1, .carousel-item-2, .carousel-item-3 {
+        all: unset;
+        max-width: 10%;
+      
+      }
+
+      .carousel-item-3 {
+        display: none;
+      }
+
+      .prev, .next{
+        all: unset;
+        visibility: hidden;
+      }
+    }
+
+    @media(min-width:980px){
+
+      .carousel-references {
+        all: unset;
+        display: block;
+        max-width: 80%;
+        margin: auto;
+      }
+
+      .carousel-item-1, .carousel-item-2, .carousel-item-3 {
+        all: unset;
+      
+      }
+
+      .prev, .next{
+        all: unset;
+        visibility: hidden;
+      }
+    }
+
+    
+
 
 
 

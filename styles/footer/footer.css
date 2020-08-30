@@ -54,3 +54,21 @@ section .social-media .fb {
 section .social-media .inst {
   fill: #E50046;
 }
+
+@media(min-width:580px){
+
+  footer {
+    width:100%;
+    background-color: var(--indigo);
+    display: flex;
+    justify-content: center;
+  }
+
+  footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 70%
+  }
+
+}

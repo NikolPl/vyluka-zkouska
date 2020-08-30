@@ -54,3 +54,9 @@
   cursor: pointer;
   box-shadow: 0.4px 4px 10px 0.4px rgb(54, 54, 54);
 }
+
+@media(min-width:580px){
+  .contact-form {
+    max-width: 40%;
+  }
+}

@@ -8,3 +8,22 @@
   padding: 35px 15px 45px 15px;
 }
 
+
+@media(min-width:580px){
+
+  .contact-organization{
+    display: flex;
+    justify-content: center;
+
+    width:100%;
+  }
+
+  .helper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    min-width: 70%;
+  }
+}
+

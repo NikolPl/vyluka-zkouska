@@ -22,3 +22,11 @@ section p{
 .center {
   text-align: center;
 }
+
+@media(min-width:580px){
+  section p {
+    margin: auto;
+    width:50%;
+    padding:20px 0px;
+  }
+}
